@@ -2,6 +2,12 @@
 
 The above matlab file is a time-delayed virus propagation dynamic model, and the prediction result is very similar to the real situation. In addition, you can use the Chinese epidemic situation to infer some unpublished epidemic data in the United States, which is very helpful for the model.
 
+The abstract of my thesis is:
+
+		The new coronavirus, named SARS-CoV-2 by the International Committee on Taxonomy of Viruses and named COVID-19 by the World Health Organization, has broken out globally and has had a serious impact on people's lives and the economies of various countries. As of May 1, 2020, more than 3.3 million people worldwide have been diagnosed with new coronary pneumonia, with a total of more than 230,000 deaths. At present, the epidemic in China has been controlled, while the epidemic in the United States is still worrying. To explore the virus transmission situation, this thesis establishes a new coronavirus transmission model based on the traditional SEIR infectious disease transmission model, it also considers the virus incubation period and policy control factors. What's more, this thesis uses the K-Means method to consider the areas of different risk levels in China and the US, it also discusses the reasons for the differences in the development of the epidemic between China and the US.
+		
+		According to the model, the epidemic in China is in the final stage. The number of new patients and the number of rehabilitation are stable. The predicted value of the model has a high correlation with the reported value, and the deviation is very small. Moreover, under the current policy intensity, the probability of imported cases not being detected in the early stages of transmission is extremely low; while the epidemic in the US is still in the development stage. Based on the assumption that the virus lethality is related to medical conditions, this thesis considers the regional economic conditions to dynamically adjust the recovery and death probabilities in the model. The results show that the adjusted model has a better fitting relationship with US data. Besides, this thesis also uses K-Means method divides 34 province-level administrative regions in China and 50 states in the US into three categories and discusses the differences in the development of epidemic situation between China and the US by considering regions with different risk levels. The model shows that there are still a large number of undetected infections in the US, and states such as New York should increase prevention and control efforts to curb the rate of spread before the epidemic deteriorates. The model proposed in this thesis well fits the historical data and has a low-bias prediction effect on the data of China and the US. It can also adaptively adjust the predicted value after data correction. The parameters of the mod are interpretable, and the prediction accuracy is also improved by giving the upper and lower prediction limits.
+
 The model is as follows:
 
 ![image](https://github.com/fby1997/Time-delayed-COVID-19-virus-propagation-dynamic-model/blob/master/model.png)
@@ -53,7 +59,7 @@ xlswrite('C:\Users\Boyue Fang\Desktop\tmp_0604_NY.xlsx',predict_value)
 ```
 to save the result.
 
-The parameters can be obtained by using "lsqcurvefit". Here I will list the parameters I got in my thesis.
+The parameters can be obtained by using "lsqcurvefit". Here I list the parameters used in my thesis.
 
 China:
 $(\beta_1,\beta,r,a,y)=(0.0509,0.001,0.0008,0.0015,0.0435)$
