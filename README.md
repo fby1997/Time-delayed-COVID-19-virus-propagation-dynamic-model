@@ -64,3 +64,5 @@ $(\beta_1,\beta,r,a,y)=(0.8531,0.0684,0.001,0.1289,0.1184)$
 
 NY:
 $(\beta_1,\beta,r,a,y)=(0.0001,0.001,0.01,0.0361,0.17)$
+
+If you have any questions, please don't hesitate to contact me, the final thesis is written in Chinese and if you get interested in it, I can send it to your e-mail.
